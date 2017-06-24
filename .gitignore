@@ -1,3 +1,8 @@
+.idea/
+*.iml
+modules.xml
+
+### Node ###
 # Logs
 logs
 *.log
@@ -57,3 +62,5 @@ typings/
 # dotenv environment variables file
 .env
 
+
+# End of https://www.gitignore.io/api/node,intellij+iml

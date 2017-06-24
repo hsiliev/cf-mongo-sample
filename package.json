@@ -1,0 +1,27 @@
+{
+  "name": "cf-mongo-sample",
+  "version": "1.0.0",
+  "description": "Sample CF application working with Mongo service ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hsiliev/cf-mongo-sample.git"
+  },
+  "keywords": [
+    "CF",
+    "Mongo",
+    "node.js"
+  ],
+  "author": "Hristo Iliev",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/hsiliev/cf-mongo-sample/issues"
+  },
+  "homepage": "https://github.com/hsiliev/cf-mongo-sample#readme",
+  "dependencies": {
+    "express": "^4.15.3"
+  }
+}
