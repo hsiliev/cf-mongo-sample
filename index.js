@@ -3,10 +3,18 @@
 const express = require('express');
 const app = express();
 
-app.get('/', (req, res) => {
-  res.send('Hello World!');
+const cfenv = require('cfenv');
+const appEnv = cfenv.getAppEnv();
+const url = appEnv.getServiceURL('mymongo', {
+  url: 'uri',
+  auth: ['username', 'password']
 });
 
-app.listen(process.env.PORT || 3000, () => {
-  console.log(`Sample app listening on port ${process.env.PORT}!`);
+app.get('/', (req, res) => {
+  res.send(`Hello with service ${url}`);
 });
+
+app.listen(appEnv.port, appEnv.bind, () => {
+  console.log(`Sample app listening on ${appEnv.url}`);
+});
+
